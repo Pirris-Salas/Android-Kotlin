@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fragments.HomeFragment">
 
     //Esta etiqueta nos permite realizar scroll en la pantalla, no obstante
     //solo admite un elemento dentro de ella, por lo que procedemos a
     //insertar un LinearLayout para contener todas las vistas
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -19,125 +21,171 @@
             // Siempre debemos de asignar una orientacion a los LinearLayout
 
             //CardView va a contener todo dentro del LinearLayout
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardViewMarginHome"
                 app:cardCornerRadius="@dimen/cardCornerRadius"
-                app:cardElevation="0dp"
-                android:layout_margin="@dimen/cardViewMarginHome">
+                app:cardElevation="0dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoImageViewHome"
-                        android:src="@drawable/banner_platzi_conf"/>
+                        android:src="@drawable/banner_platzi_conf" />
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoViewHomeFragment"
-                        android:background="@color/colorPrimary"/>
+                        android:background="@color/colorPrimary" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/inicio_frag_tv_que_es"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/sizeTitulo"
-                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"
                         android:layout_marginTop="@dimen/maginHomeSubtitulo"
                         android:layout_marginRight="@dimen/maginHomeSubtitulo"
-                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"
-                    />
+                        android:text="@string/inicio_frag_tv_que_es"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/sizeTitulo"
+                        android:textStyle="bold" />
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoViewHomeFragment"
-                        android:background="@color/colorPrimary"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"/>
+                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
+                        android:background="@color/colorPrimary" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"
+                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
+                        android:layout_marginRight="@dimen/maginHomeSubtitulo"
                         android:text="@string/inicio_frag_tv_que_es_resp"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="@dimen/sizeSubtitulo"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
-                        android:layout_marginRight="@dimen/maginHomeSubtitulo"
-                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"/>
+                        android:textSize="@dimen/sizeSubtitulo" />
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoViewHomeFragment"
-                        android:background="@color/colorPrimary"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"/>
+                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
+                        android:background="@color/colorPrimary" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardViewMarginHome"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoImageViewHome"
-                        android:src="@drawable/platzi_conf_2"/>
+                        android:src="@drawable/platzi_conf_2" />
+
                     <view
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoViewHomeFragment"
-                        android:background="@color/colorPrimary"
-                        />
+                        android:background="@color/colorPrimary" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/inicio_frag_tv_por_que"
-                        android:textSize="@dimen/sizeTitulo"
-                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"
                         android:layout_marginTop="@dimen/maginHomeSubtitulo"
                         android:layout_marginRight="@dimen/maginHomeSubtitulo"
-                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"
-                        android:textColor="@color/colorPrimaryDark"/>
+                        android:text="@string/inicio_frag_tv_por_que"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/sizeTitulo"
+                        android:textStyle="bold" />
+
                     <view
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoViewHomeFragment"
-                        android:background="@color/colorPrimary"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"/>
+                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
+                        android:background="@color/colorPrimary" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"
+                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
+                        android:layout_marginRight="@dimen/maginHomeSubtitulo"
                         android:background="@color/colorPrimary"
                         android:text="@string/inicio_frag_tv_por_que_resp"
-                        android:textSize="@dimen/sizeSubtitulo"
+                        android:textSize="@dimen/sizeSubtitulo" />
+
+                    <view
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/altoViewHomeFragment"
                         android:layout_marginTop="@dimen/maginHomeSubtitulo"
-                        android:layout_marginRight="@dimen/maginHomeSubtitulo"
-                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"/>
+                        android:background="@color/colorPrimary" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardViewMarginHome"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/altoImageViewHome"
+                        android:src="@drawable/platzi_conf_3" />
+
                     <view
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoViewHomeFragment"
-                        android:background="@color/colorPrimary"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"/>
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/altoImageViewHome"
-                            android:src="@drawable/platzi_conf_3"/>
-                    <view
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/altoViewHomeFragment"
-                        android:background="@color/colorPrimary"/>
+                        android:background="@color/colorPrimary" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/maginHomeSubtitulo"
+                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"
+                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
+                        android:background="@color/colorPrimaryDark"
                         android:text="@string/inicio_frag_tv_info"
                         android:textSize="@dimen/sizeTitulo"
-                        android:textStyle="bold"
-                        android:background="@color/colorPrimaryDark"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
-                        android:layout_marginStart="@dimen/maginHomeSubtitulo"
-                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"/>
+                        android:textStyle="bold" />
+
                     <view
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoViewHomeFragment"
-                        android:background="@color/colorPrimary"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"/>
+                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
+                        android:background="@color/colorPrimary" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/inicio_frag_tv_info_resp"
-                        android:background="@color/colorPrimary"
-                        android:textSize="@dimen/sizeSubtitulo"
+                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"
                         android:layout_marginTop="@dimen/maginHomeSubtitulo"
                         android:layout_marginRight="@dimen/maginHomeSubtitulo"
-                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"/>
-
+                        android:background="@color/colorPrimary"
+                        android:text="@string/inicio_frag_tv_info_resp"
+                        android:textSize="@dimen/sizeSubtitulo" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
