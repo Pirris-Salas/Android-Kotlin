@@ -35,4 +35,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    //Implementando material design para el uso de toolbars en nuestros layout
+    implementation 'com.google.android.material:material:1.0.0'
+
 }
