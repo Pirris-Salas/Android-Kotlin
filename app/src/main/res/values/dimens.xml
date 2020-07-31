@@ -9,5 +9,7 @@
 
     <dimen name="sizeTitulo">20sp</dimen>
     <dimen name="maginHomeSubtitulo">10dp</dimen>
+    <dimen name="sizeSubtitulo">15sp</dimen>
+    <dimen name="cardViewMarginHome">15dp</dimen>
 
 </resources>
