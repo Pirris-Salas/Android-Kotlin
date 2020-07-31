@@ -38,4 +38,7 @@ dependencies {
     //Implementando material design para el uso de toolbars en nuestros layout
     implementation 'com.google.android.material:material:1.0.0'
 
+    //Implementando recyclerview de androidx
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
 }
