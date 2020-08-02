@@ -13,5 +13,8 @@
     <dimen name="cardViewMarginHome">15dp</dimen>
 
     <dimen name="size30sp">30sp</dimen>
+    <dimen name="margin200dp">200dp</dimen>
+    <dimen name="size12sp">12sp</dimen>
+    <dimen name="margin5dp">5dp</dimen>
 
 </resources>
