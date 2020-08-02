@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/cardViewMarginHome"
-                app:cardCornerRadius="@dimen/cardCornerRadius"
+                app:cardCornerRadius="@dimen/margin4dp"
                 app:cardElevation="0dp">
 
                 <LinearLayout
@@ -41,40 +41,40 @@
 
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/altoViewHomeFragment"
+                        android:layout_height="@dimen/margin1dp"
                         android:background="@color/colorPrimary" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
-                        android:layout_marginRight="@dimen/maginHomeSubtitulo"
+                        android:layout_marginLeft="@dimen/magin10dp"
+                        android:layout_marginTop="@dimen/magin10dp"
+                        android:layout_marginRight="@dimen/magin10dp"
                         android:text="@string/inicio_frag_tv_que_es"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="@dimen/sizeTitulo"
+                        android:textSize="@dimen/size20sp"
                         android:textStyle="bold" />
 
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/altoViewHomeFragment"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
+                        android:layout_height="@dimen/margin1dp"
+                        android:layout_marginTop="@dimen/magin10dp"
                         android:background="@color/colorPrimary" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
-                        android:layout_marginRight="@dimen/maginHomeSubtitulo"
+                        android:layout_marginLeft="@dimen/magin10dp"
+                        android:layout_marginTop="@dimen/magin10dp"
+                        android:layout_marginRight="@dimen/magin10dp"
                         android:text="@string/inicio_frag_tv_que_es_resp"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="@dimen/sizeSubtitulo" />
+                        android:textSize="@dimen/size15sp" />
 
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/altoViewHomeFragment"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
+                        android:layout_height="@dimen/margin1dp"
+                        android:layout_marginTop="@dimen/magin10dp"
                         android:background="@color/colorPrimary" />
                 </LinearLayout>
 
@@ -84,7 +84,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/cardViewMarginHome"
-                app:cardCornerRadius="@dimen/cardCornerRadius"
+                app:cardCornerRadius="@dimen/margin4dp"
                 app:cardElevation="0dp">
 
                 <LinearLayout
@@ -99,40 +99,40 @@
 
                     <view
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/altoViewHomeFragment"
+                        android:layout_height="@dimen/margin1dp"
                         android:background="@color/colorPrimary" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
-                        android:layout_marginRight="@dimen/maginHomeSubtitulo"
+                        android:layout_marginLeft="@dimen/magin10dp"
+                        android:layout_marginTop="@dimen/magin10dp"
+                        android:layout_marginRight="@dimen/magin10dp"
                         android:text="@string/inicio_frag_tv_por_que"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="@dimen/sizeTitulo"
+                        android:textSize="@dimen/size20sp"
                         android:textStyle="bold" />
 
                     <view
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/altoViewHomeFragment"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
+                        android:layout_height="@dimen/margin1dp"
+                        android:layout_marginTop="@dimen/magin10dp"
                         android:background="@color/colorPrimary" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
-                        android:layout_marginRight="@dimen/maginHomeSubtitulo"
+                        android:layout_marginLeft="@dimen/magin10dp"
+                        android:layout_marginTop="@dimen/magin10dp"
+                        android:layout_marginRight="@dimen/magin10dp"
                         android:background="@color/colorPrimary"
                         android:text="@string/inicio_frag_tv_por_que_resp"
-                        android:textSize="@dimen/sizeSubtitulo" />
+                        android:textSize="@dimen/size15sp" />
 
                     <view
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/altoViewHomeFragment"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
+                        android:layout_height="@dimen/margin1dp"
+                        android:layout_marginTop="@dimen/magin10dp"
                         android:background="@color/colorPrimary" />
                 </LinearLayout>
 
@@ -142,7 +142,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/cardViewMarginHome"
-                app:cardCornerRadius="@dimen/cardCornerRadius"
+                app:cardCornerRadius="@dimen/margin4dp"
                 app:cardElevation="0dp">
 
                 <LinearLayout
@@ -157,35 +157,35 @@
 
                     <view
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/altoViewHomeFragment"
+                        android:layout_height="@dimen/margin1dp"
                         android:background="@color/colorPrimary" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/maginHomeSubtitulo"
-                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
+                        android:layout_marginStart="@dimen/magin10dp"
+                        android:layout_marginLeft="@dimen/magin10dp"
+                        android:layout_marginTop="@dimen/magin10dp"
                         android:background="@color/colorPrimaryDark"
                         android:text="@string/inicio_frag_tv_info"
-                        android:textSize="@dimen/sizeTitulo"
+                        android:textSize= "@dimen/size20sp"
                         android:textStyle="bold" />
 
                     <view
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/altoViewHomeFragment"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
+                        android:layout_height="@dimen/margin1dp"
+                        android:layout_marginTop="@dimen/magin10dp"
                         android:background="@color/colorPrimary" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/maginHomeSubtitulo"
-                        android:layout_marginTop="@dimen/maginHomeSubtitulo"
-                        android:layout_marginRight="@dimen/maginHomeSubtitulo"
+                        android:layout_marginLeft="@dimen/magin10dp"
+                        android:layout_marginTop="@dimen/magin10dp"
+                        android:layout_marginRight="@dimen/magin10dp"
                         android:background="@color/colorPrimary"
                         android:text="@string/inicio_frag_tv_info_resp"
-                        android:textSize="@dimen/sizeSubtitulo" />
+                        android:textSize="@dimen/size15sp" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>

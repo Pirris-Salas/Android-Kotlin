@@ -4,15 +4,14 @@
     <dimen name="alturaLogo">45dp</dimen>
     <dimen name="toolbarAlto">30dp</dimen>
     <dimen name="altoImageViewHome">150dp</dimen>
-    <dimen name="cardCornerRadius">4dp</dimen>
-    <dimen name="altoViewHomeFragment">1dp</dimen>
+    <dimen name="margin4dp">4dp</dimen>
+    <dimen name="margin1dp">1dp</dimen>
 
-    <dimen name="sizeTitulo">20sp</dimen>
-    <dimen name="maginHomeSubtitulo">10dp</dimen>
-    <dimen name="sizeSubtitulo">15sp</dimen>
+    <dimen name="size20sp">20sp</dimen>
+    <dimen name="magin10dp">10dp</dimen>
+    <dimen name="size15sp">15sp</dimen>
     <dimen name="cardViewMarginHome">15dp</dimen>
 
-    <dimen name="itemScheduleTitulo">30sp</dimen>
-    <dimen name="itemScheduleSubTitulo">20sp</dimen>
+    <dimen name="size30sp">30sp</dimen>
 
 </resources>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:text="00:00"
             android:gravity="right|bottom"
-            android:textSize="@dimen/itemScheduleTitulo"
+            android:textSize="@dimen/size30sp"
             android:textColor="@color/colorAccent"
             android:textStyle="bold"/>
         <TextView
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:text="A.M"
             android:gravity="right|top"
-            android:textSize="@dimen/itemScheduleSubTitulo"
+            android:textSize="@dimen/size20sp"
             android:textColor="@color/colorPrimary"/>
 
     </LinearLayout>
@@ -36,10 +36,38 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="3"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/magin10dp">
+        <TextView
+            android:id="@+id/tvItemScheduleConferenceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre de la conferencia"
+            android:textSize="@dimen/size20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:ellipsize="end"
+            android:lines="1"/>
+        <TextView
+            android:id="@+id/tvItemScheduleConferenceSpeaker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Speaker Name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/size15sp"
+            android:ellipsize="end"
+            android:lines="1"/>
+            <TextView
+                android:id="@+id/tvItemScheduleTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tag"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:lines="1"/>
+
 
     </LinearLayout>
 
-    </LinearLayout>
+</LinearLayout>
 
 </LinearLayout>
