@@ -26,4 +26,14 @@ Porque en esta versión todo girará al rededor de la pregunta: ¿Qué habilidad
         \u0009 &#8226; Lugar: Centro Cultural Roberto Cantoral.\n
         \u0009 &#8226; Dirección: Puente Xoco s/n, Xoco, 03330 Ciudad de México, CDMX.
     </string>
+
+    <string name="speaker_biography">
+        \u0009 &#8226; Kotlin-Android, Kotlin-Android, Kotlin-Android, Kotlin-Android, Kotlin-Android,.\n
+        \u0009 &#8226; Kotlin-Android, Kotlin-Android, Kotlin-Android, Kotlin-Android, Kotlin-Android, Kotlin-Android,.\n
+        \u0009 &#8226; Kotlin-Android, Kotlin-Android, Kotlin-Android,.\n
+        \u0009 &#8226; Kotlin-Android, Kotlin-Android, Kotlin-Android,Kotlin-Android,.\n
+        \u0009 &#8226; Kotlin-Android, Kotlin-Android, .
+    </string>
+
+
 </resources>

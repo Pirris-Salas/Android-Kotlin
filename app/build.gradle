@@ -41,4 +41,7 @@ dependencies {
     //Implementando recyclerview de androidx
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
 
+    //Implementando íconos redondeados
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
 }
