@@ -90,9 +90,9 @@
                             android:layout_margin="@dimen/margin5dp"/>
                         <ImageView
                             android:id="@+id/twitterSpeakerIcon"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/twitter"
+                            android:layout_width="@dimen/margin35dp"
+                            android:layout_height="@dimen/margin35dp"
+                            android:src="@drawable/ic_twitter"
                             android:layout_gravity="center_horizontal"
                             android:layout_margin="@dimen/magin10dp"/>
                         <TextView
