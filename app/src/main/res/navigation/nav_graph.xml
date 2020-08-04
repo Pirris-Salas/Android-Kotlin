@@ -14,12 +14,9 @@
         <action
             android:id="@+id/action_homeFragment_to_scheduleFragment"
             app:destination="@id/navScheduleFragment" />
-        <action
-            android:id="@+id/action_navHomeFragment_to_naScheduleFragment"
-            app:destination="@id/naScheduleFragment" />
     </fragment>
     <fragment
-        android:id="@+id/naScheduleFragment"
+        android:id="@+id/navScheduleFragment"
         android:name="com.pirris.ui.fragments.ScheduleFragment"
         android:label="fragment_schedule"
         tools:layout="@layout/fragment_schedule" >
@@ -27,7 +24,7 @@
             android:id="@+id/action_scheduleFragment_to_speakersFragment"
             app:destination="@id/navSpeakersFragment" />
         <action
-            android:id="@+id/action_naScheduleFragment_to_scheduleDetailFragmentDialog"
+            android:id="@+id/action_navScheduleFragment_to_scheduleDetailFragmentDialog"
             app:destination="@id/scheduleDetailFragmentDialog" />
     </fragment>
     <fragment
@@ -48,16 +45,10 @@
         android:label="fragment_ubication"
         tools:layout="@layout/fragment_ubication" >
         <action
-            android:id="@+id/action_navMapFragment_to_ubucationDetailFragmentDialog"
-            app:destination="@id/ubucationDetailFragmentDialog" />
+            android:id="@+id/action_navMapFragment_to_ubicationDetailFragmentDialog"
+            app:destination="@id/ubicationDetailFragmentDialog" />
     </fragment>
 
-    <dialog
-        android:id="@+id/speakersDetailFragmentDialog"
-        android:name="com.pirris.ui.fragments.SpeakersDetailDialogFragment"
-        android:label="SpeakerDetailFragmentDialog"
-        tools:layout="@layout/fragment_speakers_detail_dialog"
-        />
     <dialog
         android:id="@+id/scheduleDetailFragmentDialog"
         android:name="com.pirris.ui.fragments.ScheduleDetailDialogFragment"
@@ -65,7 +56,14 @@
         tools:layout="@layout/fragment_schedule_detail_dialog"
         />
     <dialog
-        android:id="@+id/ubucationDetailFragmentDialog"
+        android:id="@+id/speakersDetailFragmentDialog"
+        android:name="com.pirris.ui.fragments.SpeakersDetailDialogFragment"
+        android:label="SpeakerDetailFragmentDialog"
+        tools:layout="@layout/fragment_speakers_detail_dialog"
+        />
+
+    <dialog
+        android:id="@+id/ubicationDetailFragmentDialog"
         android:name="com.pirris.ui.fragments.UbicationDetailDialogFragment"
         android:label="ubicationDetailFragmentDialog"
         tools:layout="@layout/fragment_ubication_detail_dialog"
