@@ -1,14 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.fragments.UbicationDetailDialogFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <Toolbar
+            android:id="@+id/toolbarUbication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin230dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/platzi_conf_2"
+                        android:layout_marginTop="@dimen/margin56dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size15sp"
+                    app:cardCornerRadius="@dimen/margin4dp"
+                    app:cardElevation="@dimen/margin1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin5dp"
+                            android:gravity="center_horizontal"
+                            android:text="Lugar PlatziConf"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/size30sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dirección"
+                            android:textSize="@dimen/size15sp"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="left"
+                            android:padding="@dimen/margin20dp"
+                            android:drawableStart="@drawable/ic_pin"
+                            android:drawablePadding="@dimen/margin5dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin1dp"
+                            android:background="@color/colorPrimary"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Teléfono"
+                            android:textSize="@dimen/size15sp"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="left"
+                            android:padding="@dimen/margin20dp"
+                            android:drawableStart="@drawable/ic_phone"
+                            android:drawablePadding="@dimen/margin5dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin1dp"
+                            android:background="@color/colorPrimary"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lugar"
+                            android:textSize="@dimen/size15sp"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="left"
+                            android:padding="@dimen/margin20dp"
+                            android:drawableStart="@drawable/ic_link"
+                            android:drawablePadding="@dimen/margin5dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin1dp"
+                            android:background="@color/colorPrimary"
+                            android:layout_marginBottom="@dimen/magin10dp"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
