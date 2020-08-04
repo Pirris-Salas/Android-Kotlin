@@ -58,16 +58,22 @@ android:orientation="vertical">
             android:lines="1"/>
             <TextView
                 android:id="@+id/tvItemScheduleTag"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tag"
                 android:textColor="@color/white"
                 android:ellipsize="end"
-                android:lines="1"/>
+                android:lines="1"
+                android:background="@drawable/shape_topico"/>
 
 
     </LinearLayout>
 
 </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1dp"
+        android:background="@color/colorAccent"/>
 
 </LinearLayout>
