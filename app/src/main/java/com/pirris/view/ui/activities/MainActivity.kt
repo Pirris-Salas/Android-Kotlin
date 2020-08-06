@@ -1,8 +1,8 @@
-package com.pirris
+package com.pirris.view.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.pirris.model.Crear_Colecciones_En_Firebase
+import com.pirris.R
 
 
 class MainActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.pirris.ui.activities
+package com.pirris.view.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
