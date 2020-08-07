@@ -10,6 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.pirris.R
 import com.pirris.model.Speaker
@@ -41,7 +42,7 @@ class SpeakersFragment : Fragment(), SpeakerListener {
         speakerAdapter = SpeakerAdapter(this)
 
         rvSpeakers.apply {
-            layoutManager = LinearLayoutManager(view.context, LinearLayoutManager.VERTICAL, false)
+            layoutManager = GridLayoutManager(context, 2)
             adapter = speakerAdapter
         }
         observeViewModel()
