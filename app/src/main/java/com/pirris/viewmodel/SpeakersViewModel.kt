@@ -1,12 +1,13 @@
 package com.pirris.viewmodel
 
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.pirris.model.Speaker
 import com.pirris.network.Callback
 import com.pirris.network.FirestoreService
 import java.lang.Exception
 
-class SpeakersViewModel {
+class SpeakersViewModel : ViewModel(){
     val firestoreService = FirestoreService()
     var getSpeaker: MutableLiveData<List<Speaker>> = MutableLiveData()
     var isLoading = MutableLiveData<Boolean>()
