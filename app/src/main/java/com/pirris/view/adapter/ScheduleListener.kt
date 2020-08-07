@@ -1,6 +1,7 @@
 package com.pirris.view.adapter
 
-import android.telecom.Conference
+import com.pirris.model.Conference
+
 
 interface ScheduleListener {
 

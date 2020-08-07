@@ -1,6 +1,5 @@
 package com.pirris.view.adapter
 
-import android.telecom.Conference
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,6 +7,7 @@ import android.widget.TextView
 import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 import com.pirris.R
+import com.pirris.model.Conference
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
@@ -41,7 +41,7 @@ class ScheduleAdapter(val scheduleListener: ScheduleListener) : RecyclerView.Ada
      * Acá vinculamos las variabes de la clase ViewHolder con los datos que traemos de firebase
      */
     override fun onBindViewHolder(holder: ScheduleAdapter.ViewHolder, position: Int) {
-      val conference =listConference[position] as com.pirris.model.Conference
+      val conference =listConference[position] as Conference
 
         holder.tvConferenceName.text = conference.title
         holder.tvConferenceSpeaker.text = conference.speaker
@@ -57,6 +57,10 @@ class ScheduleAdapter(val scheduleListener: ScheduleListener) : RecyclerView.Ada
 
         holder.tvConferenceHour.text = hourFormat
         holder.tvConferenceAMPM.text = simpleDateFormatAMPM.format(conference.datetime).toUpperCase()
+
+        holder.itemView.setOnClickListener {
+            scheduleListener.onConferenceClicked(conference, position)
+        }
 
     }
 
