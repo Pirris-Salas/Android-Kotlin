@@ -8,8 +8,11 @@ import android.widget.TextView
 import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 import com.pirris.R
+import java.text.SimpleDateFormat
+import java.util.*
+import kotlin.collections.ArrayList
 
-class ScheduleAdapter : RecyclerView.Adapter<ScheduleAdapter.ViewHolder>(){
+class ScheduleAdapter(val scheduleListener: ScheduleListener) : RecyclerView.Adapter<ScheduleAdapter.ViewHolder>(){
 
     var listConference = ArrayList<Conference>()
     /**
@@ -38,7 +41,29 @@ class ScheduleAdapter : RecyclerView.Adapter<ScheduleAdapter.ViewHolder>(){
      * Acá vinculamos las variabes de la clase ViewHolder con los datos que traemos de firebase
      */
     override fun onBindViewHolder(holder: ScheduleAdapter.ViewHolder, position: Int) {
-      
+      val conference =listConference[position] as com.pirris.model.Conference
+
+        holder.tvConferenceName.text = conference.title
+        holder.tvConferenceSpeaker.text = conference.speaker
+        holder.tvConferenceTag.text = conference.tag
+
+        //Creamos la conversión del valor de la fecha acorde a la clase Calendar
+        val simpleDateFormat = SimpleDateFormat("HH:mm")
+        val simpleDateFormatAMPM = SimpleDateFormat("a")
+
+        val cal = Calendar.getInstance()
+        cal.time = conference.datetime
+        val hourFormat = simpleDateFormat.format(conference.datetime)
+
+        holder.tvConferenceHour.text = hourFormat
+        holder.tvConferenceAMPM.text = simpleDateFormatAMPM.format(conference.datetime).toUpperCase()
+
+    }
+
+    fun updateData(data: List<Conference>){
+        listConference.clear()
+        listConference.addAll(data)
+        notifyDataSetChanged()
     }
 
     /**
