@@ -6,7 +6,7 @@ import com.pirris.model.Conference
 import com.pirris.model.Speaker
 import java.lang.Exception
 
-const val conferences_collection = "conferences"
+const val conferences_collection = "conference"
 const val speakers_collection = "speakers"
 
 class FirestoreService{
@@ -30,6 +30,7 @@ class FirestoreService{
                     callback.onSuccess(list)
             }
 
+
             .addOnFailureListener{result ->
                 result.runCatching {
                     val ex = callback.onFailed(result)
@@ -44,13 +45,6 @@ class FirestoreService{
             .addOnSuccessListener { result ->
                    val list = result.toObjects(Conference::class.java)
                     callback.onSuccess(list)
-            }
-
-            .addOnFailureListener{result ->
-                result.runCatching {
-                    val ex = callback.onFailed(result)
-                    println(ex)
-                }
             }
         }
 
