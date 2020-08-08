@@ -13,10 +13,6 @@ import com.pirris.model.Conference
 import kotlinx.android.synthetic.main.fragment_schedule_detail_dialog.*
 import java.text.SimpleDateFormat
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
