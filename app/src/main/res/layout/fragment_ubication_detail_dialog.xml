@@ -17,7 +17,8 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -33,7 +34,7 @@
                         android:layout_height="@dimen/margin230dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/platzi_conf_2"
-                        android:layout_marginTop="@dimen/margin56dp"/>
+                        />
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -49,6 +50,7 @@
                         android:background="@drawable/shape_parrafo">
 
                         <TextView
+                            android:id="@+id/tvDetailUbicationName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="@dimen/margin5dp"
@@ -59,6 +61,7 @@
                             android:textSize="@dimen/size30sp" />
 
                         <TextView
+                            android:id="@+id/tvDetailUbicationAddress"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Dirección"
@@ -73,6 +76,7 @@
                             android:layout_height="@dimen/margin1dp"
                             android:background="@color/colorPrimary"/>
                         <TextView
+                            android:id="@+id/tvDetailUbicationPhone"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Teléfono"
@@ -87,6 +91,7 @@
                             android:layout_height="@dimen/margin1dp"
                             android:background="@color/colorPrimary"/>
                         <TextView
+                            android:id="@+id/tvDetailUbicationLink"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Lugar"
