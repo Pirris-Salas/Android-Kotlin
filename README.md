@@ -2,7 +2,7 @@
 This is my first time coding an Android app in Kotlin :clapper: :books:
 ##
 
-![](https://media.giphy.com/media/joeRRpeeCiL93N26Rc/giphy.gif)
+![](https://media.giphy.com/media/cImx4JnsWVnNYG8vEN/giphy.gif)
 
 ##
 - RecyclerView
@@ -15,17 +15,27 @@ This is my first time coding an Android app in Kotlin :clapper: :books:
 - LinearLayout
 - AppBarLayout
 - Toolbar
+
+##
+
+![](https://media.giphy.com/media/lSaVWQUexmrnOmDGro/giphy.gif)
+
+##
+
 - BottomNavigationView
 - Shapes
 - Android Jetpack
 - AndroidX
-- Firebase / Firestore
+- Firebase / Cloud Firestore
 - ViewModel
 - LiveData
 - Adapter
+- setAnimationListener()
+- onBindViewHolder()
+- GoogleMap()
 
 ##
-![](https://media.giphy.com/media/J4PF01QM3JSxRUQXZ2/giphy.gif)
+![](https://media.giphy.com/media/KcVGm8yqA4RHfYAHZj/giphy.gif)
 
 ##
 
@@ -41,6 +51,10 @@ This is my first time coding an Android app in Kotlin :clapper: :books:
 - onStart()
 - Glide
 - Calendar
+##
+
+![](https://media.giphy.com/media/hRCFZqKtzi1xeLRS4T/giphy.gif)
+
 ##
 
 ### Dependencies
