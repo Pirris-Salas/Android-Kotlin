@@ -27,5 +27,6 @@
     <dimen name="margin20dp">20dp</dimen>
     <dimen name="margin56dp">56dp</dimen>
     <dimen name="margin3dp">3dp</dimen>
+    <dimen name="margin100dp">100dp</dimen>
 
 </resources>
